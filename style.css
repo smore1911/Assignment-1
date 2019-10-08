@@ -96,3 +96,17 @@ img {
 .demo:hover {
   opacity: 1;
 }
+
+.column_landscape {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row_landscape::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
