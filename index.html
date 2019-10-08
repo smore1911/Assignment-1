@@ -2,8 +2,111 @@
 <html>
 <head>
 	<title>Home - Karen Hale</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <div class="container">
+    <div class="mySlides">
+    <img src="Slide_image1.jpg">
+    </div>
+    <div class="mySlides">
+    <img src="Slide_image2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+    <img src="Slide_image3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+    <img src="Slide_image4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+    <img src="Slide_image5.jpg" style="width:100%">
+    </div> 
+    <div class="mySlides">
+    <img src="Slide_image6.jpg" style="width:100%">
+    </div> 
+    <div class="mySlides">
+    <img src="Slide_image7.jpg" style="width:100%">
+    </div> 
+    <div class="mySlides">
+    <img src="Slide_image8.jpg" style="width:100%">
+    </div> 
+    <div class="mySlides">
+    <img src="Slide_image9.jpg" style="width:100%">
+    </div> 
+    <div class="mySlides">
+    <img src="Slide_image10.jpg" style="width:100%">
+    </div> 
+    <div class="mySlides">
+    <img src="Slide_image11.jpg" style="width:100%">
+    </div> 
+    <div class="mySlides">
+    <img src="Slide_image12.jpg" style="width:100%">
+    </div> 
+    <div class="mySlides">
+    <img src="Slide_image13.jpg" style="width:100%">
+    </div>    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div> -->
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+    <p>Texture, dimension, and color are the basis for Karen Hale’s original acrylic abstract artwork. The use if varying elements contribute to each of her contemporary abstract designs. Each canvas is bold but also brings meaning that take the viewer into the painting where they can make new and unexpected insights. Karen Hale’s mixed media paintings are non-representational, are constructed of many layers and may include texture medium, glazes, washes, graphite pencil, found papers, pen and pastels.</p>
+
+<p>Interiors come alive with Karen Hale’s original artwork. Whether working with a designer or renovating a space on your own, Karen Hale is available to help you select from her collection or she will create a custom, contemporary art piece for your home or office. She is happy to bring multiple options to your location for a personal showing prior to purchase (within reasonable travel limitations). And if you prefer, using your digital photos of the desired installation wall Karen will photoshop painting options into the space for a virtual view.</p>
 
 </body>
 </html>
