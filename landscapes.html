@@ -1,10 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<title>Landscapes - Karen Hole</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		.column_landscape {
+		  float: left;
+		  width: 33.33%;
+		  padding: 5px;
+		}
+
+		/* Clear floats after image containers */
+		.row_landscape::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+		.navbar a {
+		  float: left;
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		.navbar a:hover {
+		  color: gray;
+		}
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* Six columns side by side */
+		.column {
+		  float: left;
+		  width: 16.66%;
+		}
+
+		/* Add a transparency effect for thumnbail images */
+		.demo {
+		  opacity: 0.6;
+		}
+
+		.active,
+		.demo:hover {
+		  opacity: 1;
+		}
+	</style>
 </head>
 <body>
+	<header style="background-color: black; color: white; padding-top: 15px; padding-bottom: 15px; padding-left: 30px; " >  
+  <i class='fas fa-phone' style="color: white;"></i>: 209-223-1814  
+
+<i class='fas fa-envelope' style="color: white; padding-left: 5pt;" ></i> : <a class= "link">karenhale@karenhale.com</a>
+</header >
+  <div style="width:100%; background-color:lightblue; background-image: url(backgroundi.jpg); background-repeat: no-repeat; height: 1000%; border-image-width: 100px">
+    <table align=center >
+      <tr >
+        <td align=center style = "padding-top: 0px; color: white;">
+          <p style="font-size: 50pt;  font-family: arial">KAREN HALE</p>
+          <p style="font-size: 26pt; font-family: arial">ABSTRACT, CONTEMPORARY</p>
+          <p style="font-size: 22pt; font-family: arial">MIXED MEDIA PAINTINGS</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          
+ 
+          <div class = "navbar" align = center>
+            <a href="#home">HOME</a>
+            <a href="#news">PORTFOLIO</a>
+            <a href="#purchase">PURCHASE</a>
+            <a href="#galleries">GALLERIES</a>
+            <a href="#events">EVENTS</a>
+            <a href="temp_contact.html">ABOUT</a>
+            <a href="#youtube">YOUTUBE</a>
+            <a href="#blog">BLOG</a>
+          </div>
+
+           
+        </td>
+      </tr> 
+    </table>
+  </div>
+
 	<h1 style="text-align: center; font-family: arial;"><b>LANDSCAPES</b></h1>
 	<hr><br>
 	<div class="row_landscape">
