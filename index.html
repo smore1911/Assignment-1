@@ -2,119 +2,14 @@
 <html>
 <head>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 	<title>Home - Karen Hale</title>
-  <style>
-        body {
-      font-family: Arial;
-      margin: 0px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    .navbar a {
-      float: left;
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    .navbar a:hover {
-      color: gray;
-    }
-
-    img {
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 100%
-    }
-    /* Position the image container (needed to position the left and right arrows) */
-    .container {
-      position: relative;
-      margin: 35px;
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-      display: none;
-    }
-
-    /* Add a pointer when hovering over the thumbnail images */
-    .cursor {
-      cursor: pointer;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 40%;
-      width: auto;
-      padding: 16px;
-      margin-top: -50px;
-      color: white;
-      font-weight: bold;
-      font-size: 20px;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-
-    .imglinkcontainer{
-      position: relative;
-  text-align: center;
-  color: white;
-    }
-
-    .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-    /* Container for image text */
-    .caption-container {
-      text-align: center;
-      background-color: #222;
-      padding: 2px 16px;
-      color: white;
-    }
-    th, td ,tr {
-  padding: 13px;
-  </style>
 </head>
 <body>
   <header style="background-color: black; color: white; padding-top: 15px; padding-bottom: 15px; padding-left: 30px; " >  
   <i class='fas fa-phone' style="color: white;"></i>: 209-223-1814  
 
-<i class='fas fa-envelope' style="color: white; padding-left: 5pt;" ></i> : <a class= "link">karenhale@karenhale.com</a>
+<i class='fas fa-envelope' style="color: white; padding-left: 5pt;" ></i> : <a href="mailto:karenhale@karenhale.com" class= "link" style="color: white;">karenhale@karenhale.com</a>
 </header >
   <div style="width:100%; background-color:lightblue; background-image: url(backgroundi.jpg); background-repeat: no-repeat; height: 1000%; border-image-width: 100px">
     <table align=center >
@@ -130,12 +25,19 @@
           
  
           <div class = "navbar" align = center>
-            <a href="#home">HOME</a>
+            <a href="index.html">HOME</a>
             <a href="#news">PORTFOLIO</a>
-            <a href="#purchase">PURCHASE</a>
-            <a href="#galleries">GALLERIES</a>
-            <a href="#events">EVENTS</a>
-            <a href="temp_contact.html">ABOUT</a>
+            <a href="purchase.html">PURCHASE</a>
+            <a href="gallery.html">GALLERIES</a>
+            <a href="events.html">EVENTS</a>
+            <div class="dropdown">
+              <button class="dropbtn">ABOUT
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+              <a href="#">BIOGRAPHY</a>
+              <a href="contact.html">CONTACT</a>
+              <a href="#">FAQ</a></div></div>
             <a href="#youtube">YOUTUBE</a>
             <a href="#blog">BLOG</a>
           </div>
@@ -225,7 +127,6 @@ function showSlides(n) {
 
     <p style="text-align: justify; font-family: arial; margin: 65px;">Texture, dimension, and color are the basis for Karen Hale’s original acrylic abstract artwork. The use if varying elements contribute to each of her contemporary abstract designs. Each canvas is bold but also brings meaning that take the viewer into the painting where they can make new and unexpected insights. Karen Hale’s mixed media paintings are non-representational, are constructed of many layers and may include texture medium, glazes, washes, graphite pencil, found papers, pen and pastels.</p>
 <p style="text-align: justify; font-family: arial; margin: 65px;">Interiors come alive with Karen Hale’s original artwork. Whether working with a designer or renovating a space on your own, Karen Hale is available to help you select from her collection or she will create a custom, contemporary art piece for your home or office. She is happy to bring multiple options to your location for a personal showing prior to purchase (within reasonable travel limitations). And if you prefer, using your digital photos of the desired installation wall Karen will photoshop painting options into the space for a virtual view.</p>
-
 
 <h1 style="text-align: center; font-family: arial;"><b>LATEST WORK</b></h1>
 
@@ -351,15 +252,15 @@ function showSlides(n) {
   </table>
 
 <footer style="background-color: black; color: white; padding-top: 15px; padding-bottom: 15px;">
-  <table width = "100%">
+  <table width = "100%" style="margin: 35px; font-family: arial;">
     <tr>
-      <td width="50%" align= "center" style="color: grey">Prices and any other information about the paintings may be obtained by <br><p><a href="contact.html" style="color: white;">contacting me directly via email </a></p>or phone at 209-223-1814.
+      <td align= "padding-left" style="color: grey">Prices and any other information about the paintings may be obtained by <br><p><a href="contact.html" style="color: white;">contacting me directly via email </a></p>or phone at 209-223-1814.
       </td>
-      <td width="50%" align= "center" style="color: grey">All artwork appearing on this website <br>is the property of Karen Hale and <br>is protected under United States and <br>International law. The artwork may <br>not be reproduced, stored, or <br>manipulated without the written permission <br>of the artist.
+      <td align= "padding-left" style="color: grey;">All artwork appearing on this website <br>is the property of Karen Hale and <br>is protected under United States and <br>International law. The artwork may <br>not be reproduced, stored, or <br>manipulated without the written permission <br>of the artist.
       </td>
     </tr>
     <tr>
-      <td colspan="2" align= "center" style="color: grey">© 2019 <a href="index.html" style="color: white">Karen Hale</a>. All rights reserved.
+      <td colspan="2" align= "center" style="color: grey;"><hr><br>© 2019 <a href="index.html" style="color: white">Karen Hale</a>. All rights reserved.
       </td>
     </tr>
   </table>
