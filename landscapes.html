@@ -1,25 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<title>Landscapes - Karen Hole</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		.column_landscape {
+		  margin: 0px;
+		  width: 33%;
+		  float: left;
+  		  padding: 0px;
+		}
+
+		/* Clear floats after image containers */
+		.row_landscape:after {
+  			display: table;
+  			clear: both;
+  			content: "";
+		}
+		.navbar a {
+		  float: left;
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		.navbar a:hover {
+		  color: gray;
+		}
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* Six columns side by side */
+		.column {
+		  float: left;
+		  width: 16.66%;
+		}
+
+		/* Add a transparency effect for thumnbail images */
+		.demo {
+		  opacity: 0.6;
+		}
+
+		.active,
+		.demo:hover {
+		  opacity: 1;
+		}
+		th, td ,tr {
+  padding: 13px;}
+	</style>
 </head>
 <body>
+	<header style="background-color: black; color: white; padding-top: 15px; padding-bottom: 15px; padding-left: 30px; " >  
+  <i class='fas fa-phone' style="color: white;"></i>: 209-223-1814  
+
+<i class='fas fa-envelope' style="color: white; padding-left: 5pt;" ></i> : <a class= "link">karenhale@karenhale.com</a>
+</header >
+  <div style="width:100%; background-color:lightblue; background-image: url(backgroundi.jpg); background-repeat: no-repeat; height: 1000%; border-image-width: 100px">
+    <table align=center >
+      <tr >
+        <td align=center style = "padding-top: 0px; color: white;">
+          <p style="font-size: 50pt;  font-family: arial">KAREN HALE</p>
+          <p style="font-size: 26pt; font-family: arial">ABSTRACT, CONTEMPORARY</p>
+          <p style="font-size: 22pt; font-family: arial">MIXED MEDIA PAINTINGS</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          
+ 
+          <div class = "navbar" align = center>
+            <a href="index.html">HOME</a>
+            <a href="#news">PORTFOLIO</a>
+            <a href="#purchase.html">PURCHASE</a>
+            <a href="#gallery.html">GALLERIES</a>
+            <a href="#events.html">EVENTS</a>
+            <a href="contact.html">ABOUT</a>
+            <a href="#youtube">YOUTUBE</a>
+            <a href="#blog">BLOG</a>
+          </div>
+
+           
+        </td>
+      </tr> 
+    </table>
+  </div>
+
 	<h1 style="text-align: center; font-family: arial;"><b>LANDSCAPES</b></h1>
 	<hr><br>
 	<div class="row_landscape">
+<!--    <div class="column_landscape">
+    
+  </div>  -->
   <div class="column_landscape">
-    <img src="landscapes1.jpg" style="width:100%">
-  </div>
-  <div class="column_landscape">
-    <img src="landscapes2.jpg" style="width:100%">
-  </div>
-  <div class="column_landscape">
-    <img src="landscapes3.jpg" style="width:100%">
-  </div>
-  <div class="column_landscape">
-  	<img src="landscapes4.jpg" style="width: 100%">
+  	<img src="landscapes1.jpg" style="width: 100%">
+    <img src="landscapes2.jpg" style="width: 100%">
+    <img src="landscapes3.jpg" style="width: 100%">
+    <img src="landscapes4.jpg" style="width: 100%">
   </div>
 </div>
+  <div class="row_landscape">
+  <div class="column_landscape">
+    <img src="landscapes5.jpg" style="width:80%; height:80%">
+    <img src="landscapes6.jpg" style="width:80%; height:80%">
+    <img src="landscapes8.jpg" style="width:80%; height:80%">
+  </div>
+</div>
+<footer style="background-color: black; color: white; padding-top: 15px; padding-bottom: 15px;">
+  <table width = "100%">
+    <tr>
+      <td width="50%" align= "center" style="color: grey">Prices and any other information about the paintings may be obtained by <br><p style="color: white">contacting me directly via email </p>or phone at 209-223-1814.
+      </td>
+      <td width="50%" align= "center" style="color: grey">All artwork appearing on this website <br>is the property of Karen Hale and <br>is protected under United States and <br>International law. The artwork may <br>not be reproduced, stored, or <br>manipulated without the written permission <br>of the artist.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align= "center" style="color: grey">© 2019 <p style="color: white">Karen Hale</p>.All rights reserved.
+      </td>
+    </tr>
+  </table>
+  </footer>
 </body>
 </html>
