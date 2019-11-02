@@ -6,18 +6,60 @@
 
   <style>
 
-.navbar a {
-	float: left;
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
+   .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .navbar a:hover {
+      color: gray;
+    }
+
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-.navbar a:hover {
-	color: gray;
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover {
+  text-decoration-color: pink;}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 input[type=text] {
@@ -107,13 +149,33 @@ input[type=submit]:hover {
         <td>
           
  
-          <div class = "navbar" align = center>
-            <a href="#home">HOME</a>
-            <a href="#news">PORTFOLIO</a>
-            <a href="#purchase">PURCHASE</a>
-            <a href="#galleries">GALLERIES</a>
-            <a href="#events">EVENTS</a>
-            <a href="temp_contact.html">ABOUT</a>
+         <div class = "navbar" align = center>
+            <a href="index.html">HOME</a>
+            <div class="dropdown">
+              <button class="dropbtn">PORTFOLIO
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+              <a href="#">LATEST WORK</a>
+              <a href="#">MINI PAINTINGS</a>
+              <a href="#">SMALL PAINTINGS</a>
+              <a href="#">FLORALS</a>
+              <a href="#">STICKS</a>
+              <a href="#">SCULPTURAL</a>
+              <a href="#">ABSTRACTS</a>
+              <a href="landscapes.HTML">LANDSCAPES</a>
+              </div></div>
+            <a href="purchase.html">PURCHASE</a>
+            <a href="gallery.html">GALLERIES</a>
+            <a href="events.html">EVENTS</a>
+            <div class="dropdown">
+              <button class="dropbtn">ABOUT
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+              <a href="#">BIOGRAPHY</a>
+              <a href="contact.html">CONTACT</a>
+              <a href="#">FAQ</a></div></div>
             <a href="#youtube">YOUTUBE</a>
             <a href="#blog">BLOG</a>
           </div>
@@ -250,16 +312,16 @@ Open Studio
 		</table>
 	</div>
 
-	<footer style="background-color: black; color: white; padding-top: 15px; padding-bottom: 15px;text-align: justify-all;">
-  <table width = "100%">
+	<footer style="background-color: black; color: white; padding-top: 15px; padding-bottom: 15px;">
+  <table width = "100%" style="margin: 35px; font-family: arial;">
     <tr>
-      <td width="50%" align= "center" style="color: grey; text-align: justify-all;">Prices and any other information about the paintings may be obtained by <br><a href="contact.html" style="color: white">contacting me directly via email </a>or phone at 209-223-1814.
+      <td align= "padding-left" style="color: grey">Prices and any other information about the paintings may be obtained by <br><p><a href="contact.html" style="color: white;">contacting me directly via email </a></p>or phone at 209-223-1814.
       </td>
-      <td width="50%" align= "center" style="color: grey; text-align: justify-all;">All artwork appearing on this website <br>is the property of Karen Hale and <br>is protected under United States and <br>International law. The artwork may <br>not be reproduced, stored, or <br>manipulated without the written permission <br>of the artist.
+      <td align= "padding-left" style="color: grey;">All artwork appearing on this website <br>is the property of Karen Hale and <br>is protected under United States and <br>International law. The artwork may <br>not be reproduced, stored, or <br>manipulated without the written permission <br>of the artist.
       </td>
     </tr>
     <tr>
-      <td colspan="2" align= "center" style="color: grey; text-align: justify-all;">© 2019 <a href="index.html" style="color: white">Karen Hale. </a>All rights reserved.
+      <td colspan="2" align= "center" style="color: grey;"><hr><br>© 2019 <a href="index.html" style="color: white">Karen Hale</a>. All rights reserved.
       </td>
     </tr>
   </table>
