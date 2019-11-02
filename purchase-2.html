@@ -321,6 +321,67 @@ aside {
 .footer-container.color-scheme-light p {
     color: rgba(255,255,255,.6);
 }
+.footer-container.color-scheme-light .main-footer+.copyrights-wrapper .min-footer {
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.min-footer {
+    display: table;
+    width: 100%;
+    padding: 20px 0;
+    line-height: 1.6;
+}
+.copyrights-centered .min-footer>div:first-child, .copyrights-centered .min-footer>div:last-child:empty {
+    margin-top: 0;
+}
+.copyrights-centered .min-footer>div {
+    display: block;
+    text-align: center;
+    width: 100%;
+    /* margin-top: 15px; */
+}
+.min-footer .col-left, .min-footer .col-right {
+    /* display: table-cell; */
+    vertical-align: middle;
+    /* width: 50%; */
+}
+.footer-container.color-scheme-light a {
+    color: #fff !important;
+    text-decoration: underline;
+}
+.scrollToTop.button-show {
+    visibility: visible;
+    opacity: 1;
+}
+.scrollToTop {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    color: #000;
+    z-index: 350;
+    font-size: 0;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: #fff;
+    position: fixed;
+    bottom: 75px;
+    right: 40px;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    /* backface-visibility: hidden; */
+    -webkit-backface-visibility: hidden;
+    /* transform: scale(1); */
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    /* transition: .2s all ease; */
+    -moz-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    -webkit-transition: .2s all ease;
+}
+.scrollToTop .basel-tooltip-label {
+    display: none;
+}
 
 	</style>
 
@@ -512,5 +573,7 @@ aside {
 			</div>
 				
 	</footer>
+	<a href="#" class="scrollToTop basel-tooltip button-show"><span class="basel-tooltip-label">Scroll To Top</span>Scroll To Top</a>
+
 </body>
 </html>
